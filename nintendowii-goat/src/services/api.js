@@ -1,0 +1,1 @@
+// URL API: GET https://api.rawg.io/api/platforms?key=827c31ebaf514da7b49110c603b9fb57
