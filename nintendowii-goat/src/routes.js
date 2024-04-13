@@ -1,20 +1,17 @@
+import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-
 import Home from './pages/Home';
-import Jogos from './pages/Jogos';
-
-import Header from './Components/Header';
+import Pokemons from './pages/Pokemons';
 
 function RoutesApp() {
-    return(
-        <BrowserRouter>
-            <Header />
-            <Routes>
-                <Route path='/' element={ <Home /> } />
-                <Route path='/jogos/:id' element={ <Jogos /> } />
-            </Routes>
-        </BrowserRouter>
-    )
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/Hearthstone/:cards" element={<Pokemons />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
 export default RoutesApp;
